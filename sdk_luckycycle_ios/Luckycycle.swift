@@ -58,7 +58,7 @@ open class Luckycycle: NSObject, UIWebViewDelegate {
     let headers: HTTPHeaders = ["Accept": "application/json",]
     
     // constructor - only needs storeId or operationId (can be obtained via an API call or hard coded) & a ref to the parent view
-    init(bucketId:String, parentView: UIView) {
+    public init(bucketId:String, parentView: UIView) {
         self.bucketId = bucketId
         self.pokeUrl = "https://www.luckycycle.com/client/poke/\(bucketId)"
         self.parentView = parentView
